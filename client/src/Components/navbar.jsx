@@ -6,7 +6,7 @@ class Navbar extends Component {
 		return (
 				<div className="container-menu">
 					<ul id="nav">
-						<li><a class="active" href="#"><i class="fa fa-home"></i></a></li>
+						<li><a className="active" href="#"><i className="fa fa-home"></i></a></li>
 						<li><a href="/products">Products</a></li>
 						<li><a href="/orders">Orders</a></li>
 						<li><a href="/purcels">Purcels</a></li>

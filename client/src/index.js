@@ -6,6 +6,7 @@ import Orders from './Components/orders'
 import Products from './Components/products'
 import Header from './Components/header'
 import NavBar from './Components/navbar' 
+import Parcel from './Components/parcel' 
 
 const Index = () => (
   <div>
@@ -15,6 +16,7 @@ const Index = () => (
 						<Route exact path='/' component={Products} />
 						<Route exact path='/orders' component={Orders} />
 						<Route exact path='/products' component={Products} />
+						<Route exact path='/parcel' component={Parcel} />
 				</BrowserRouter>
 	</div>
 );
