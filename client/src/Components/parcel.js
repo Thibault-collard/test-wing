@@ -32,17 +32,15 @@ for(let i=0; i<ordersList.orders.length;i++){
 		for(let k=0; k < ordersList.orders[i].items[j].quantity;k++){
 			tmp_weight = findCorrespondingWeight(ordersList.orders[i].items[j].item_id)
 			//console.log(tmp_weight)
-			
-			if( weight_available + parseFloat(tmp_weight) < 0 ){
+			if(weight_available - tmp_weight > 0 ){
 				weight_available -= tmp_weight;
-				console.log(weight_available)
-				console.log(parseFloat(tmp_weight))
-			}	
+			}
+				
+				
 			if(weight_available > parseFloat(tmp_weight)){
 				//console.log(ordersList.orders[i].items[j].quantity)
 				//console.log(tmp_quantity)
 				//console.log(weight_available)
-				weight_available -= parseFloat(tmp_weight)
 				if(tmp_quantity == ordersList.orders[i].items[j].quantity){
 					//console.log('bouclage en base de donnée')
 					items.push({item_id:ordersList.orders[i].items[j].item_id,quantity:tmp_quantity})
@@ -77,7 +75,7 @@ for(let i=0; i<ordersList.orders.length;i++){
 			}
 			
 		}
-
+		tmp_quantity = 1;
 				// 
 				// 	//console.log(ordersList.orders[i].items[j].quantity)
 					
