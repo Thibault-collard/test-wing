@@ -27,16 +27,18 @@ class TabParcel extends Component {
 								{this.props.category.map((item, i) => (
 										<Table.Row>
 												<>
-													<Table.Cell>{item.id}</Table.Cell>
-													<Table.Cell>{item.name} {item.date}</Table.Cell>
-
-													<Table.Cell>{item.weight} 
-													{	this.props.category.items ?
-														this.props.category.items.map((item, i) => (
-															{item} 
-														)): null }
-													</Table.Cell>
+													<Table.Cell>{item.order_id}</Table.Cell>
+													<Table.Cell>{item.weight} </Table.Cell>
+														{this.props.category.map((item, i) => (
+															<>
+															<Table.Cell>{item.items[0].item_id}</Table.Cell>
+															<Table.Cell>{item.items[0].quantity}</Table.Cell>
+															</>
+														))}
+													<Table.Cell> {item.tracking_id}</Table.Cell>
+													<Table.Cell> {item.palette_number}</Table.Cell>
 													
+													<Table.Cell></Table.Cell>
 												</>
 										</Table.Row> 
 								))}

@@ -97,7 +97,14 @@ class Parcel extends Component {
 	
   render() {
     return (
-			<TabParcel category={parcel}/>
+			<>
+			<div className="App">
+        <div className="container">
+          <div className="App-header"> Parcels : </div>
+					<TabParcel category={parcel.parcel}/>
+        </div>
+      </div>
+			</>
 		)  
   }
 }

@@ -8,7 +8,7 @@ class Navbar extends Component {
 						<li><a className="active" href="#"><i className="fa fa-home"></i></a></li>
 						<li><a href="/products">Products</a></li>
 						<li><a href="/orders">Orders</a></li>
-						<li><a href="/purcels">Purcels</a></li>
+						<li><a href="/parcel">Purcels</a></li>
 						<li><a href="/transaction">Transaction</a></li>
 					</ul>
 				</div>
