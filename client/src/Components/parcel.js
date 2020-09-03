@@ -51,7 +51,7 @@ for(let i=0; i<ordersList.orders.length;i++){
 				console.log(tmp_quantity)
 				//console.log(weight_available)
 				//console.log('colis parcel')
-				parcel.parcel.push({items})
+				parcel.parcel.push({items, weight:30 - weight_available })
 				items = [];	
 				weight_available = 30;
 				if(tmp_quantity == ordersList.orders[i].items[j].quantity){
