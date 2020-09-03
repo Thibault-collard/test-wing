@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import axios from "axios";
+import TabParcel from './tableParcel'
 
 let ordersList = require('../data/orders.json');
 let itemsList = require('../data/items.json');
@@ -96,9 +97,7 @@ class Parcel extends Component {
 	
   render() {
     return (
-
-			<>
-			</>
+			<TabParcel category={parcel}/>
 		)  
   }
 }
