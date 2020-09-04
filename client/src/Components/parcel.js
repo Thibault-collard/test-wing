@@ -84,7 +84,7 @@ function dropshipingAlgo(){
 			}
 		}
 		attrTrackingID()
-		
+		console.log(parcel)
 }
 
 dropshipingAlgo()
