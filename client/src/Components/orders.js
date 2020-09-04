@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../logo.png';
-import Tab from './table'
+import TabOrder from './table-orders.jsx'
 import '../App.css';
 
 let ordersList = require('../data/orders.json');
@@ -15,7 +14,7 @@ class Orders extends Component {
       <div className="App">
         <div className="container">
           <div className="App-header"> Orders : </div>
-            <Tab category={this.state.orders}/>
+            <TabOrder category={this.state.orders}/>
         </div>
       </div>
     );

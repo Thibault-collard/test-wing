@@ -5,11 +5,10 @@ class Navbar extends Component {
 		return (
 				<div className="container-menu">
 					<ul id="nav">
-						<li><a className="active" href="#"><i className="fa fa-home"></i></a></li>
+						<li><a className="active" href="/"><i className="fa fa-home"></i></a></li>
 						<li><a href="/products">Products</a></li>
 						<li><a href="/orders">Orders</a></li>
-						<li><a href="/parcel">Purcels</a></li>
-						<li><a href="/transaction">Transaction</a></li>
+						<li><a href="/parcel">Parcels</a></li>
 					</ul>
 				</div>
 		);

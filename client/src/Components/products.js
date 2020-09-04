@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../logo.png';
 import Tab from './table'
 import '../App.css';
 let itemsList = require('../data/items.json');

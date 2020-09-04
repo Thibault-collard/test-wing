@@ -1,6 +1,6 @@
 
 import React from "react";
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route} from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import Orders from './Components/orders'
 import Products from './Components/products'
